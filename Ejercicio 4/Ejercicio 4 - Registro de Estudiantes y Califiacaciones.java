@@ -32,7 +32,5 @@ public class Ejercicio4Registro {
         } catch (IOException e) {
             System.out.println("Error al escribir el archivo: " + e.getMessage());
         }
-        
-        sc.close();
     }
 }
