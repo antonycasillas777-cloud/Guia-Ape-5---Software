@@ -70,7 +70,5 @@ public class Ejercicio3SistemaVentas {
         } catch (IOException e) {
             System.out.println("Error al escribir el archivo: " + e.getMessage());
         }
-        
-        sc.close();
     }
 }
