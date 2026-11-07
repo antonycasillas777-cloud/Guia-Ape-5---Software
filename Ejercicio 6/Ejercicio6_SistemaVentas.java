@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Ejercicio3SistemaVentas {
+public class Ejercicio6_SistemaVentas {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double totalAcumulado = 0;
