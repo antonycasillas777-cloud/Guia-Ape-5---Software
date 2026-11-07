@@ -2,7 +2,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Ejercicio8EscribirMaterias {
+public class Ejercicio8_EscribirMaterias {
     private static final String RUTA = "materias.txt";
 
     public static void main(String[] args) {
