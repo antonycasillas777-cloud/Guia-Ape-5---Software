@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.IOException;
 
-public class Ejercicio10CicloVida {
+public class Ejercicio10_CicloVida {
     private static final String RUTA = "datos/temporal.txt";
 
     public static void main(String[] args) {
