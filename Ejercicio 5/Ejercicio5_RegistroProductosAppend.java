@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Ejercicio2RegistroProductosAppend {
+public class Ejercicio2_RegistroProductosAppend {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
