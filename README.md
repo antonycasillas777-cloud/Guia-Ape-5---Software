@@ -35,16 +35,16 @@ Aprender a trabajar con archivos de texto en Java usando las clases de `java.io`
 
 ```
 Guia-Ape-5---Software/
-├── Ejercicio 1/    Crear archivo            (.java)
-├── Ejercicio 2/    Escribir en archivo      (.java)
-├── Ejercicio 3/    Borrar archivo           (.java)
-├── Ejercicio 4/    Estudiantes y notas      (.java)
-├── Ejercicio 5/    Productos con append     (.java)
-├── Ejercicio 6/    Sistema de ventas        (.java)
-├── Ejercicio 7/    Explorar archivo         (.java)
-├── Ejercicio 8/    Escribir materias        (.java)
-├── Ejercicio 9/    Agregar materias         (.java)
-├── Ejercicio 10/   Ciclo de vida de archivo (.java)
+├── Ejercicio 1/    Ejercicio1_CrearArchivo.java       + Ejecucion - Ej1.jpeg
+├── Ejercicio 2/    Ejercicio2_EscribirArchivo.java    + Ejecucion - Ej2.jpeg
+├── Ejercicio 3/    Ejercicio3_BorrarArchivo.java      + Ejecucion - Ej3.jpeg
+├── Ejercicio 4/    Ejercicio4_RegistroEstudiantesCalificaciones.java + Ejecucion - Ej4.jpeg
+├── Ejercicio 5/    Ejercicio5_RegistroProductosAppend.java + Ejecucion - Ej5.jpeg
+├── Ejercicio 6/    Ejercicio6_SistemaVentas.java      + Ejecucion - Ej6.jpeg
+├── Ejercicio 7/    Ejercicio7_ExplorarArchivo.java    + Ejecucion - Ej7.jpeg
+├── Ejercicio 8/    Ejercicio8_EscribirMaterias.java   + Ejecucion - Ej8.jpeg
+├── Ejercicio 9/    Ejercicio9_AgregarMaterias.java    + Ejecucion - Ej9.jpeg
+├── Ejercicio 10/   Ejercicio10_CicloVida.java         + Ejecucion - Ej10.jpeg
 ├── Ejercicios_Ficheros_1_2_3.pdf            (informe)
 ├── Ejercicios_Ficheros_4_5_6.pdf            (informe)
 ├── Ejercicios_Ficheros_7_8_9_10.pdf         (informe)
@@ -83,16 +83,22 @@ Crea **`curso.txt`**.
 [AVISO] El archivo curso.txt ya estaba creado.
 ```
 
+![Ejecución ejercicio 1](Ejercicio%201/Ejecucion%20-%20Ej1.jpeg)
+
 ### 2️⃣ Escribir en un fichero
 Lee un mensaje por teclado y lo guarda en **`estudiantes.txt`**.
 - `Scanner` captura el texto dentro de un `try-with-resources`.
 - `FileWriter(ruta, true)` abre en modo **append**: agrega al final sin borrar lo anterior.
 - `BufferedWriter` escribe con `write()` y `newLine()`.
 
+![Ejecución ejercicio 2](Ejercicio%202/Ejecucion%20-%20Ej2.jpeg)
+
 ### 3️⃣ Eliminar un fichero
 Elimina **`estudiantes.txt`**.
 - `exists()` verifica que el archivo esté antes de borrar.
 - `delete()` devuelve `true` si lo eliminó; si falla puede ser por permisos o porque está abierto.
+
+![Ejecución ejercicio 3](Ejercicio%203/Ejecucion%20-%20Ej3.jpeg)
 
 ### 4️⃣ Registro de estudiantes y calificaciones
 Pide el nombre y la calificación de **3 estudiantes** y los guarda en `estudiantes.txt`.
@@ -100,10 +106,14 @@ Pide el nombre y la calificación de **3 estudiantes** y los guarda en `estudian
 - Un ciclo `for` repite la lectura tres veces.
 - Cada estudiante ocupa dos líneas (nombre y calificación).
 
+![Ejecución ejercicio 4](Ejercicio%204/Ejecucion%20-%20Ej4.jpeg)
+
 ### 5️⃣ Registro de productos con append
 Guarda nombre, precio y cantidad de un producto en `productos.txt`.
 - Modo *append*: cada ejecución agrega un producto nuevo.
 - Calcula `valorTotal = precio * cantidad` y lo guarda junto con una línea separadora.
+
+![Ejecución ejercicio 5](Ejercicio%205/Ejecucion%20-%20Ej5.jpeg)
 
 ### 6️⃣ Sistema de ventas
 Registra ventas en `ventas.txt` hasta que se escribe `fin`.
@@ -111,23 +121,33 @@ Registra ventas en `ventas.txt` hasta que se escribe `fin`.
 - **Descuento del 10 %** si el subtotal es mayor o igual a 100.
 - Al terminar guarda el **total acumulado** de todas las ventas.
 
+![Ejecución ejercicio 6](Ejercicio%206/Ejecucion%20-%20Ej6.jpeg)
+
 ### 7️⃣ Explorar un archivo
 Trabaja con `datos/prueba.txt`.
 - Crea la carpeta `datos` si no existe (`mkdirs()`).
 - Crea el archivo solo si no existe y muestra su nombre y ruta.
+
+![Ejecución ejercicio 7](Ejercicio%207/Ejecucion%20-%20Ej7.jpeg)
 
 ### 8️⃣ Escribir materias
 Escribe cinco asignaturas en `materias.txt`, una por línea.
 - Usa `try-catch-finally` para cerrar el `BufferedWriter` siempre.
 - Sobrescribe el contenido anterior.
 
+![Ejecución ejercicio 8](Ejercicio%208/Ejecucion%20-%20Ej8.jpeg)
+
 ### 9️⃣ Agregar materias
 Añade **Inglés Técnico** e **Ingeniería de Software** al final de `materias.txt`.
 - Modo *append* (`true`): conserva las materias del ejercicio 8.
 
+![Ejecución ejercicio 9](Ejercicio%209/Ejecucion%20-%20Ej9.jpeg)
+
 ### 🔟 Ciclo de vida de un archivo
 Crea `datos/temporal.txt`, consulta si existe y lo elimina tras una confirmación simulada.
 - Une `exists()`, `createNewFile()` y `delete()` en un solo flujo.
+
+![Ejecución ejercicio 10](Ejercicio%2010/Ejecucion%20-%20Ej10.jpeg)
 
 ---
 
@@ -135,21 +155,13 @@ Crea `datos/temporal.txt`, consulta si existe y lo elimina tras una confirmació
 
 Requisito: **JDK 17 o superior** (`java -version` para comprobarlo).
 
-> ⚠️ En Java, el nombre del archivo `.java` debe coincidir con el de la clase `public`. Algunos archivos de este repositorio tienen nombres descriptivos con espacios (por ejemplo `Ejercicio 1 - Crear Archivo.java`). Para compilarlos, usa el nombre de la clase:
+Cada ejercicio está en su carpeta y el nombre del archivo coincide con el de su clase:
 
 ```bash
 # Ejemplo con el Ejercicio 1
-cp "Ejercicio 1/Ejercicio 1 - Crear Archivo.java" Ejercicio1CrearArchivo.java
-javac Ejercicio1CrearArchivo.java
-java Ejercicio1CrearArchivo
-```
-
-Los ejercicios 7 al 10 ya tienen el nombre correcto:
-
-```bash
-cd "Ejercicio 8"
-javac Ejercicio8EscribirMaterias.java
-java Ejercicio8EscribirMaterias
+cd "Ejercicio 1"
+javac Ejercicio1_CrearArchivo.java
+java Ejercicio1_CrearArchivo
 ```
 
 > 💡 Orden recomendado: 1 → 2 → 3, luego 4 → 5 → 6, y por último 7 → 8 → 9 → 10 (el 9 depende de que el 8 haya creado `materias.txt`).
