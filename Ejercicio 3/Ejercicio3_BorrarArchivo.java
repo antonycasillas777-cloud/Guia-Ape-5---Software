@@ -1,6 +1,6 @@
 import java.io.File;
 
-public class Ejercicio3BorrarArchivo {
+public class Ejercicio3_BorrarArchivo {
 
     private static final String RUTA = "estudiantes.txt";
 
