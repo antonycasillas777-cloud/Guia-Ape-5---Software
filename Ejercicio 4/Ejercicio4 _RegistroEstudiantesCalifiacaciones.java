@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Ejercicio4_RegistroEstudiantes {
+public class Ejercicio4_RegistroEstudiantesCalificaciones {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
