@@ -35,12 +35,12 @@ Aprender a trabajar con archivos de texto en Java usando las clases de `java.io`
 
 ```
 Guia-Ape-5---Software/
-├── Ejercicio 1/    Crear archivo            (.java + diagrama)
-├── Ejercicio 2/    Escribir en archivo      (.java + diagrama)
-├── Ejercicio 3/    Borrar archivo           (.java + diagrama)
-├── Ejercicio 4/    Estudiantes y notas      (.java + diagrama)
-├── Ejercicio 5/    Productos con append     (.java + diagrama)
-├── Ejercicio 6/    Sistema de ventas        (.java + diagrama)
+├── Ejercicio 1/    Crear archivo            (.java)
+├── Ejercicio 2/    Escribir en archivo      (.java)
+├── Ejercicio 3/    Borrar archivo           (.java)
+├── Ejercicio 4/    Estudiantes y notas      (.java)
+├── Ejercicio 5/    Productos con append     (.java)
+├── Ejercicio 6/    Sistema de ventas        (.java)
 ├── Ejercicio 7/    Explorar archivo         (.java)
 ├── Ejercicio 8/    Escribir materias        (.java)
 ├── Ejercicio 9/    Agregar materias         (.java)
@@ -82,7 +82,6 @@ Crea **`curso.txt`**.
 [OK] Se creó el archivo: curso.txt
 [AVISO] El archivo curso.txt ya estaba creado.
 ```
-![Diagrama ejercicio 1](Ejercicio%201/diagrama_ejercicio1_crear_archivo.png)
 
 ### 2️⃣ Escribir en un fichero
 Lee un mensaje por teclado y lo guarda en **`estudiantes.txt`**.
@@ -90,14 +89,10 @@ Lee un mensaje por teclado y lo guarda en **`estudiantes.txt`**.
 - `FileWriter(ruta, true)` abre en modo **append**: agrega al final sin borrar lo anterior.
 - `BufferedWriter` escribe con `write()` y `newLine()`.
 
-![Diagrama ejercicio 2](Ejercicio%202/diagrama_ejercicio2_escribir_archivo.png)
-
 ### 3️⃣ Eliminar un fichero
 Elimina **`estudiantes.txt`**.
 - `exists()` verifica que el archivo esté antes de borrar.
 - `delete()` devuelve `true` si lo eliminó; si falla puede ser por permisos o porque está abierto.
-
-![Diagrama ejercicio 3](Ejercicio%203/diagrama_ejercicio3_eliminar_archivo.png)
 
 ### 4️⃣ Registro de estudiantes y calificaciones
 Pide el nombre y la calificación de **3 estudiantes** y los guarda en `estudiantes.txt`.
@@ -105,22 +100,16 @@ Pide el nombre y la calificación de **3 estudiantes** y los guarda en `estudian
 - Un ciclo `for` repite la lectura tres veces.
 - Cada estudiante ocupa dos líneas (nombre y calificación).
 
-![Diagrama ejercicio 4](Ejercicio%204/diagrama_ejercicio4_estudiantes.png)
-
 ### 5️⃣ Registro de productos con append
 Guarda nombre, precio y cantidad de un producto en `productos.txt`.
 - Modo *append*: cada ejecución agrega un producto nuevo.
 - Calcula `valorTotal = precio * cantidad` y lo guarda junto con una línea separadora.
-
-![Diagrama ejercicio 5](Ejercicio%205/diagrama_ejercicio5_productos.png)
 
 ### 6️⃣ Sistema de ventas
 Registra ventas en `ventas.txt` hasta que se escribe `fin`.
 - Ciclo `while (true)` con `break`.
 - **Descuento del 10 %** si el subtotal es mayor o igual a 100.
 - Al terminar guarda el **total acumulado** de todas las ventas.
-
-![Diagrama ejercicio 6](Ejercicio%206/diagrama_ejercicio6_ventas.png)
 
 ### 7️⃣ Explorar un archivo
 Trabaja con `datos/prueba.txt`.
