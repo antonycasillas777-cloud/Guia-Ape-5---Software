@@ -2,7 +2,7 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Ejercicio9AgregarMaterias {
+public class Ejercicio9_AgregarMaterias {
     private static final String RUTA = "materias.txt";
 
     public static void main(String[] args) {
