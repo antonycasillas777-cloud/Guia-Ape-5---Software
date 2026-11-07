@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.IOException;
 
-public class Ejercicio7ExplorarArchivo {
+public class Ejercicio7_ExplorarArchivo {
     private static final String RUTA = "datos/prueba.txt";
 
     public static void main(String[] args) {
