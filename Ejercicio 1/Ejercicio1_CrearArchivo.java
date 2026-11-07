@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.IOException;
 
-public class Ejercicio1CrearArchivo {
+public class Ejercicio1_CrearArchivo {
 
     private static final String RUTA = "curso.txt";
 
