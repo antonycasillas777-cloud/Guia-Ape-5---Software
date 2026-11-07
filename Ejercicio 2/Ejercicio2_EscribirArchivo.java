@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Ejercicio2EscribirArchivo {
+public class Ejercicio2_EscribirArchivo {
 
     private static final String RUTA = "estudiantes.txt";
 
